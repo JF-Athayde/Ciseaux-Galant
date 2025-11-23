@@ -1,0 +1,46 @@
+/* ================= CAROUSEL ================= */
+
+.carousel-item {
+    background-color: #BF9A54;
+}
+
+.carousel-item .servicos {
+    padding: 2rem;
+    background-color: #F2E49B;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel-item .servicos .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* TEXTO */
+.carousel-item .servicos .txt {
+    width: 20%;
+    color: #333;
+    margin-right: 10rem;
+}
+
+.carousel-item .servicos .txt h4 {
+    font-size: 3.25rem; /* 52px */
+    color: #333;
+}
+
+.carousel-item .servicos .txt ul li {
+    font-size: 1.125rem; /* 18px */
+    color: #333;
+}
+
+/* IMAGENS */
+.carousel-item .servicos .imgs {
+    padding: 0.5rem;
+    display: flex;
+    gap: 2rem;
+    width: 50%;
+    border: 0.125rem solid #BF9A54;
+    border-radius: 0.5rem;
+}

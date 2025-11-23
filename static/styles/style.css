@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", serif;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    height: 50rem;
+    padding: 1rem 0;
+    text-align: center;
+    background-image: url(/assets/Roby_Salao_Beleza-3774.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    .flex {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+
+        nav {
+            ul {
+
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                width: 100vw;
+
+                a {
+                    text-decoration: none;
+                    color: #f0f0f0;
+                    font-size: 18px;
+                    position: relative;
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    color: #F2E49B;
+                    transform: scale(1.1);
+                }
+
+                a::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 2px;
+                    background: #F2E49B;
+                    transition: 1s;
+                }
+
+                a:hover::after {
+                    width: 100%;
+                    color: #F2E49B;
+                }
+
+            }
+
+        }
+
+        .btn-contato {
+
+            button {
+                width: 10rem;
+                padding: 0.5rem;
+                background-color: #BF9A54;
+                border: none;
+                border-radius: 0.2rem;
+                transition: 1s;
+
+                a {
+                    text-decoration: none;
+                    color: #f0f0f0;
+
+                }
+
+            }
+
+            button:hover {
+                transform: scale(1.05);
+            }
+
+        }
+
+    }
+
+    .subtitle {
+        padding: 15rem 20rem;
+
+        h2 {
+            font-size: 52px;
+            color: #BF9A54;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 2rem;
+            color: #f0f0f0;
+        }
+
+        button {
+            margin-top: 2rem;
+            width: 15rem;
+            padding: 1rem;
+            background-color: #BF9A54;
+            border: none;
+            border-radius: 0.2rem;
+            transition: 1s;
+
+            a {
+                text-decoration: none;
+                color: #f0f0f0;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+    }
+
+}
+
+
+
+/* AJUSTES DO CARROUSEL DO BOOT */
+
+.carousel-item {
+    background-color: #BF9A54;    
+
+    .servicos {
+        padding: 2rem;
+        background-color: #F2E49B;
+        width: 80%;
+        margin: auto;
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            .txt {
+                width: 20%;
+                color: #333;
+                margin-right: 10rem;
+
+                h4 {
+                    font-size: 52px;
+                    color: #333;
+                }
+
+                ul {
+
+                    li {
+                        color: #333;
+                        font-size: 18px;
+                    }
+
+                }
+
+            }
+
+            .imgs {
+                padding: 0.5rem;
+                display: flex;
+                gap: 2rem;
+                width: 50%;
+                border: solid 2px #BF9A54;
+                border-radius: 0.5rem;
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+/* SOBRE */
+.sobre {
+    padding: 2rem;
+
+    .flex {
+        width: 60%;
+        margin: auto;
+        display: flex;
+
+        .img {
+            width: 50%;
+        }
+
+        .txt {
+            padding: 5rem 2rem;
+        }
+
+    }
+
+}
+
+
+
+/* IMAGES */
+
+.images {
+    .global {
+        width: 60%;
+        margin: auto;
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+
+            img{
+                transition: 1s; 
+            }
+
+            img:hover{
+                transform: scale(1.05);
+            }
+
+        }
+
+    }
+}
+
+
+/* FORM E IFRAME */
+
+.form {
+    padding: 4rem;
+
+    .flex1 {
+        display: flex;
+        width: 60%;
+        margin: auto;
+        gap: 2rem;
+
+        form {
+            text-align: center;
+            width: 50%;
+
+            h2 {
+                font-size: 38px;
+                color: #333;
+            }
+
+            .flex2 {
+                display: flex;
+                gap: 1rem;
+                margin-bottom: 2rem;
+
+                input {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0.5rem;
+                    transition: 1s;
+
+                }
+
+                input:hover{
+                    transform: scale(1.05);
+                }
+
+            }
+
+            textarea {
+                resize: none;
+                width: 100%;
+                padding: 0.5rem;
+                transition: 1s;
+            }
+
+            textarea:hover{
+                transform: scale(1.05);
+            }
+
+            button {
+                width: 100%;
+                padding: 1rem;
+                margin-top: 2rem;
+                background-color: #BF9A54;
+                color: #333;
+                border: none;
+                border-radius: 0.2rem;
+                transition: 1s;
+            }
+
+            button:hover{
+                transform: scale(1.05);
+            }
+
+        }
+
+        .local {
+            margin: 0 2rem;
+        }
+
+    }
+}
+
+
+
+/*FOOTER */
+footer {
+    background-color: black;
+    padding: 2rem;
+    text-align: center;
+
+    .head {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        color: #F2E49B;
+    }
+
+    .cont {
+        padding: 2rem;
+        width: 45%;
+        margin: auto;
+
+        p {
+            font-size: 16px;
+            color: #333;
+            padding: 2rem;
+        }
+
+    }
+
+    .links {
+        width: 70%;
+        margin: auto;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: #F2E49B;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+
+
+
+
+
+/* ANIMATIONS */
